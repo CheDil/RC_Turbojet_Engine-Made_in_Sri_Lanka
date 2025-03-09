@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include<Servo.h>
+#include<ESP32Servo.h>
 #include<HX711.h>
 #include<BluetoothSerial.h>
 
@@ -35,9 +35,36 @@ void setup() {
   Serial.println("The device started, now you can pair it with bluetooth!");
   pinMode(digital_output_pin, OUTPUT);
   pinMode(relay_pin, OUTPUT);
-}
+  }
+
 
 void loop() {
+  if (Serial_BT.available()) {
+    String data = "";
+    while (Serial_BT.available()) {
+      char c = Serial_BT.read();
+      if (c == '\n') break; // Assuming newline as the delimiter
+      data += c;
+    }
+    if(data == "po"){
+      turn_on_off_pump(1);
+    }
+    else if(data == "pc"){
+      turn_on_off_pump(0);
+    }
+    else if(data == "ro"){
+      turn_on_off_relay(1);
+    }
+    else if(data == "rc"){
+      turn_on_off_relay(0);
+    }
+    else if(data == "w"){
+      Serial_BT.println(Weight_reading());
+    }
+    else{
+      servo_motor_mechanism(data.toFloat());
+    }
+}
 }
 
 // put function definitions here:
