@@ -11,7 +11,7 @@ BluetoothSerial Serial_BT;
 Servo servo_motor;
 const int Loadcell_dout = 2;
 const int Loadcell_sck = 4;
-const int digital_output_pin = 5;
+const int pump_relay_1 = 5;
 const int relay_pin = 5;
 
 //calibration_readings 
@@ -33,7 +33,7 @@ void setup() {
   Serial.begin(9600);
   Serial_BT.begin("ESP32");
   Serial.println("The device started, now you can pair it with bluetooth!");
-  pinMode(digital_output_pin, OUTPUT);
+  pinMode(pump_relay_1, OUTPUT);
   pinMode(relay_pin, OUTPUT);
   }
 
@@ -84,9 +84,9 @@ float Weight_reading() {
 
 void turn_on_off_pump(int state) {
   if (state == 1) {
-    digitalWrite(digital_output_pin, HIGH);
+    digitalWrite(pump_relay_1, HIGH);
   } else {
-    digitalWrite(digital_output_pin, LOW);
+    digitalWrite(pump_relay_1, LOW);
   }
 }
 
