@@ -10,8 +10,8 @@
 BluetoothSerial Serial_BT;
 Servo servo_motor;
 const int Loadcell_dout = 2;
-const int Loadcell_sck = 3;
-const int digital_output_pin = 4;
+const int Loadcell_sck = 4;
+const int digital_output_pin = 5;
 const int relay_pin = 5;
 
 //calibration_readings 
@@ -26,7 +26,7 @@ void turn_on_off_relay(int);
 
 
 void setup() {
-  servo_motor.attach(9);
+  servo_motor.attach(18);
   Loadcell.begin(Loadcell_dout, Loadcell_sck);
   Loadcell.set_scale(calibration_factor);
   Loadcell.tare();
@@ -59,12 +59,15 @@ void loop() {
       turn_on_off_relay(0);
     }
     else if(data == "w"){
-      Serial_BT.println(Weight_reading());
+      Serial.println("Inside weight reading");
+      Serial.println(Weight_reading());
     }
     else{
       servo_motor_mechanism(data.toFloat());
     }
 }
+// Serial.println(Weight_reading());
+// delay(100);
 }
 
 // put function definitions here:
