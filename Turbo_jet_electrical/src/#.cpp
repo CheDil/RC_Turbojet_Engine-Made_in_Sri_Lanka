@@ -39,6 +39,8 @@ void setup() {
 
 
 void loop() {
+
+  Serial.println("Hello world");
   if (Serial_BT.available()) {
     String data = "";
     while (Serial_BT.available()) {
@@ -46,10 +48,10 @@ void loop() {
       if (c == '\n') break; // Assuming newline as the delimiter
       data += c;
     }
-    if(data == "po"){
+    if(data.toFloat() == 200){
       turn_on_off_pump(1);
     }
-    else if(data == "pc"){
+    else if(data.toFloat() == 300){
       turn_on_off_pump(0);
     }
     else if(data == "ro"){
@@ -58,16 +60,14 @@ void loop() {
     else if(data == "rc"){
       turn_on_off_relay(0);
     }
-    else if(data == "w"){
+    else if(data.toFloat() == 400){
       Serial.println("Inside weight reading");
       Serial.println(Weight_reading());
     }
     else{
       servo_motor_mechanism(data.toFloat());
-    }
+    }   
 }
-// Serial.println(Weight_reading());
-// delay(100);
 }
 
 // put function definitions here:
