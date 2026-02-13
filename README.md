@@ -10,20 +10,24 @@ We fabricated a functional RC turbojet engine in Sri Lanka using cost-effective,
 ## Table of Contents
 This README provides a comprehensive guide to the design, manufacturing, technical decisions and challenges encounted throughout our RC turbojet engine project. Use the links below to quickly navigate to each section:
 
-- [Project Overview](#project-overview)
 - [Design Decisions](#design-decisions)
    - [Compressor](#compressor)
    - [Stator](#stator)
+   - [Essential Features of the Stator](#essential-features-of-the-stator)
    - [Vaneless vs. Bladed Stators](#vaneless-vs-bladed-stators)
-   - [Shaft](#shaft)
-   - [Turbo Guided Vanes (Nozzle Guide Vanes)](#turbo-guided-vanes)
-   - [NGV Aerodynamic and Geometry Considerations](#aerodynamic-and-geometry-considerations)
-   - [NGV Fabrication Process](#our-ngv-fabrication-process)
-   - [Turbine](#turbine)
-   - [Combustion C hamber](#combustion-chamber)
-   - [Compressor Shroud](#compressor-shroud)
-- [Dimensions Chart](#dimensions-chart)
-- [Material Consideration](#material-consideration)
+      - [Trade-offs Between Vaneless and Bladed Stators](#trade-offs-between-vaneless-and-bladed-stators)
+- [Shaft](#shaft)
+- [Turbo/nozzle w Guided vanes](#turbo-nozzle-w-guided-vanes)
+   - [Aerodynamic and Geometry Considerations](#aerodynamic-and-geometry-considerations)
+   - [Our NGV Fabrication Process](#our-ngv-fabrication-process)
+- [Turbine](#turbine)
+- [Combustion Chamber](#combustion-chamber)
+   - [Our Manufacturing Approach](#our-manufacturing-approach)
+- [Compressor Shroud](#compressor-shroud)
+   - [Aerodynamic and Dimensional Considerations](#1-aerodynamic-and-dimensional-considerations)
+   - [Structural and Material Considerations](#2-structural-and-material-considerations)
+   - [Manufacturing and Integration](#3-manufacturing-and-integration)
+- [Full Assembly](#full-assembly)
 
 ---
 
