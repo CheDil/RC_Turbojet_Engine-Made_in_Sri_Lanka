@@ -1,4 +1,6 @@
 <!-- PROJECT TITLE & BADGE -->
+![alt text](<docs/RC TURBO JET ENGINE-9.png>)
+
 # RC Turbojet Engine Made in Sri Lanka
 
 We fabricated a functional RC turbojet engine in Sri Lanka using cost-effective, locally available materials ✈️. Prioritizing functionality over weight, we first test with affordable materials before transitioning to aerospace-grade ones. This project showcases innovation🔥, adaptability, and engineering excellence with limited resources!🌍
@@ -28,17 +30,27 @@ This README provides a comprehensive guide to the design, manufacturing, technic
 ## Design Decisions
 
 ### Compressor
-The compressor is a critical component, as it drives the entire system based on its compression ratio(**reference). This is why our initial focus was on selecting and sourcing the right compressor for the project.
+The compressor is a critical component in rc turbo jet engines, as it drives the entire system based on its compression ratio(**reference). This is why our initial focus was on selecting and sourcing the right compressor for the project.
 The initial decision regarding the size of our turbojet engine was driven by the availability and practicality of sourcing a suitable compressor. For RC turbojet engines, a centrifugal compressor is essential. 
-![alt text](310488_1_En_9_Fig17_HTML.gif.png)
+
+<p align="center">
+  <img src="docs/310488_1_En_9_Fig17_HTML.gif.png" width="490" alt="Front View">
+</p>
+
 Manufacturing a custom compressor to our exact requirements would have required advanced 4-axis milling, with costs approaching LKR 50,000—making it impractical for our budget.
 
 As an alternative, we considered using car turbocharger compressors(**reference), which are well-suited for this application. However, purchasing a brand-new turbocharger compressor would still cost around LKR 12,000. To further reduce costs, we visited compressor repair centers and sourced defective turbochargers that were discarded due to faults in other components, while the compressor section remained in good condition. This strategy enabled us to acquire the necessary compressor at a fraction of the market price, ensuring both affordability and functionality for our project.
-<img src="compressor.png" alt="Compressor" width="450"/>
+<p align="center">
+  <img src="docs/compressor.png" width="350" alt="Front View">
+  <img src="docs/compressor_1.jpeg" width="300" alt="Back View">
+</p>
+<p align="center"><em>Reference | Our Unit</em></p>
 
 ---
 
+
 ### Stator
+
 ### Essential Features of the Stator
 - **Divergent Geometry:** Internal passages must be divergent (widening) to slow down the high-velocity air leaving the impeller and convert kinetic energy into static pressure.
 - **Vane Placement and Gap:** Diffuser vanes should not start immediately at the impeller edge. A vaneless annular space (typically 1.15 to 1.2 times the wheel diameter) between the rotor and stator blades helps even out airflow.
@@ -51,11 +63,20 @@ Manufacturing the stator with the ideal features presents significant cost and t
 1. **4-Axis Milling:** Integrating vanes directly into the stator using 4-axis milling, which would cost around LKR 40,000 for the entire system.
 2. **Lathe with Separate Vanes:** Machining the main stator body on a lathe and then attaching vanes separately.
 3. **Lathe Only (No Vanes):** Fabricating the stator entirely on a lathe without adding vanes.
-<img src="stator.png" alt="Stator" width="380"/>
-[text](https://share.google/vIEyuUOXTUau4Db4e)
+
+<p align="center">
+  <img src="docs/stator.png" width="350" alt="Front View">
+  <img src="docs/stator_1.jpeg" width="400" alt="Back View">
+</p>
+<p align="center"><em>Reference | Our Unit</em></p>
+
 
 Due to cost constraints, only options 2 and 3 were feasible. However, given the small size of the system, manufacturing and attaching separate vanes (option 2) was impractical. As a result, we chose option 3—making the stator using a lathe without vanes. 
 
+A bladed diffuser is considered the best solution for a model jet engine, allowing for a compact frontal area and higher pressure conversion.
+however vaneless stator systems are a recognized as a valid alternative design that trades some efficiency for manufacturing simplicity—a well-documented approach in turbo jet engines.
+
+### Vaneless vs. Bladed Stators
 #### Trade-offs Between Vaneless and Bladed Stators
 The choice between using vanes or a vaneless space involves a trade-off between manufacturing simplicity and engine size:
 
@@ -69,22 +90,16 @@ The choice between using vanes or a vaneless space involves a trade-off between 
 - **Residual Swirl:** Vaneless diffusers cannot easily eliminate the twisting motion of gases, leading to pressure drops as the gas moves toward the engine center.
 
 **Conclusion from the Sources:**
-A bladed diffuser is considered the best solution for a model jet engine, allowing for a compact frontal area and higher pressure conversion. However, sources confirm that a vaneless system is a functional alternative for those prioritizing ease of construction over maximum performance.
 The decision to omit stator vanes was based on references indicating that bladeless (vaneless) stator systems are suitable when simplicity is required and when testing basic system functionality is the priority. This approach allowed us to minimize design complexity and focus on essential performance.
 
+The stator also contains three grooves to provide oil flow and dissipate bearing heat. We machined these grooves on a 3-axis milling machine using 5 mm endmills.
+
+<p align="center">
+  <img src="docs/stator_grooves.jpeg" width="350" alt="Front View">
+</p>
+
+
 ---
-
-
-
----
-
-
-
-
-**Analogy:**
-A vaneless stator is like a wide, open field that eventually lets cars slow down and turn, but it requires a massive amount of land. A bladed stator is like a tightly curved, concrete-walled ramp; it takes up very little space and directs traffic perfectly, but if the walls are built at the wrong angle, the cars will crash.
-
-
 
 ## Shaft
 The shaft design strictly followed official reference dimensions, as these have already undergone intense design considerations for load balance, mechanical strength, and high-speed stability. We did not make any major changes, ensuring the shaft would reliably withstand the demanding conditions of turbojet operation.
@@ -96,10 +111,15 @@ Designing an engine shaft requires careful attention to mechanical strength, rot
 - **Material Selection:** Use of heat-treated steel for toughness, avoiding materials like titanium and stainless steel for reliability and heat dissipation.
 - **Precision Machining and Bearings:** Extreme accuracy in machining, robust bearing support, and accommodation for differential thermal expansion.
 
-By adhering to these proven reference dimensions, we made only minimal changes—primarily to ensure proper fitment with the compressor. For manufacturing, we selected high-carbon steel, which allowed for precise machining of the shaft's tiny details. The entire process, performed on a lathe over a full day, was time-consuming due to the small dimensions and required accuracy.
+By adhering to these proven reference dimensions, we made only minimal changes—primarily to ensure proper fitment with the compressor. For manufacturing, we selected high-carbon steel, which allowed for precise machining of the shaft's tiny details. We also tested a shaft made from low-carbon steel, but it made extremely difficult to achieve the fine details required, and at very small diameters, the shaft became imbalanced. This confirmed that high-carbon steel was the correct material choice for this application. The entire process, performed on a lathe over a full day, was time-consuming due to the small dimensions and required accuracy.
 
-## Turbo Guided vanes
-## Aerodynamic and Geometry Considerations
+<p align="center">
+  <img src="docs/shaft_1-3.png" width="550" alt="Front View">
+</p>
+
+
+## Turbo/nozzle w Guided vanes
+### Aerodynamic and Geometry Considerations
 The aerodynamic shape and geometry of the nozzle guide vanes (NGV) are crucial for efficient energy transfer in a turbojet engine. The vanes serve as stationary nozzles, converting the pressure energy of hot combustion gases into high-velocity jets that drive the turbine rotor. Key aerodynamic and geometric considerations include:
 
 - **Energy Conversion:** NGVs accelerate combustion gases by forming convergent passages between adjacent vanes, increasing gas velocity to near sonic speeds (up to ~2,500 ft/s in full-sized engines).
@@ -121,13 +141,20 @@ To fabricate the nozzle guide vanes (NGV) for our engine, we followed a step-by-
    - These strips were then further divided into smaller rectangles, each forming an individual vane.
 
 3. **Vane Shaping:**
-   - Each small rectangle was carefully bent to achieve the correct aerodynamic profile, mimicking the twist and divergence found in actual turbine vanes. This step was time-consuming, as it required each vane to be shaped like a miniature wing to ensure proper gas flow.
+   - Each small rectangle was carefully bent to achieve the correct aerodynamic profile, mimicking the twist and divergence found in actual turbine vanes. This step was time-consuming, as it required each vane to be shaped inorder to ensure proper gas flow.
 
 4. **Assembly and Welding:**
    - The shaped vanes were positioned on the core to create convergent passages between adjacent vanes, ensuring the gas would be accelerated and directed as required.
    - We used TIG welding to attach each vane to the core, taking care to maintain the correct orientation: vanes were set to direct flow perpendicular to the turbine vanes and to overlap as much as possible when viewed from the front.
 
 This hands-on fabrication approach allowed us to meet the main aerodynamic requirements for NGVs, despite the challenges of working with small, precise components and manual assembly.
+
+<p align="center">
+  <img src="docs/Turbo_guided_vanes_1.jpeg" width="260" alt="Front View">
+  <img src="docs/turbo_guided_2.png" width="290" alt="Front View">
+  <img src="docs/Turbine_guided_3.png" width="290" alt="Front View">
+
+</p>
 
 ## Turbine
 
@@ -140,26 +167,68 @@ According to Thomas Kamps and related sources, there are two main approaches to 
 - **Finishing:** Blades are ground and sanded to achieve an aerodynamic, cambered profile, with a rounded inlet and pointed outlet.
 
 ### Industrial Manufacturing (Casting)
-- **Investment Casting:** Uses the lost wax process to create complex, high-performance turbine rotors with internal cooling passages and excellent surface finish.
-- **Advanced Techniques:** For maximum durability, blades may be made with Directional Solidification or as Single Crystals to resist heat-induced deformation (creep).
+- **Investment Casting:** A casting process that creates complex turbine rotors with smooth surfaces and internal cooling channels.
+- **Advanced Methods:** For extra durability, blades can be made using special casting techniques that help them resist warping at high temperatures.
 
 ### Our Turbine Fabrication Approach
 Instead of fabricating the turbine from sheet metal or casting, we repurposed an undamaged turbine from an old car turbocharger. This approach provided a component made from a material capable of withstanding very high temperatures, which is essential for this part of the engine. To adapt the turbocharger turbine for our use and reduce its weight, we cut away a portion of its cross-section. This method offered several advantages but also presented unique challenges:
 
 1. **Material Hardness and Cutting:**
-   - The used turbocharger turbine had already experienced multiple heat, cooling, and stress cycles, making the material extremely hard. Cutting the cross-section precisely was difficult and time-consuming, requiring significant effort to achieve the desired shape. After cutting, additional time was spent polishing and smoothing the surface and also we have to be caution that not to break any vanes. 
+   - The used turbocharger turbine had already experienced multiple heat, cooling, and stress cycles, making the material extremely hard. Cutting the cross-section precisely was difficult and time-consuming. After cutting, additional time was spent polishing and smoothing the surface, while being extremely cautious not to break any vanes. 
 
 2. **Machining the Shaft Hole:**
-   - Drilling a hole for the shaft was particularly challenging due to the hardened material. We had to use several drill bits, including a high-quality diamond bit, to complete the process. The hole was finished on a lathe to ensure accuracy and minimize the risk of vibration from uneven material.
+   - Drilling a hole for the shaft was particularly challenging due to the hardened material. We visited several locations to source high-quality drill bits capable of penetrating this material. The drilling process itself was extremely time-consuming and we had to sharpen the bit approximately 16 times throughout the process. The hole was then finished on a lathe to ensure accuracy and minimize the risk of vibration from uneven material distribution.
 
 This method allowed us to utilize a high-temperature-resistant material while overcoming the difficulties of machining a previously used and hardened turbine component.
 
 > **Safety Note:**
 > When working with a reused turbocharger turbine, extra caution is required. The material's increased hardness from previous heat and stress cycles can make it more brittle and susceptible to cracking or failure during modification or operation. Always prioritize safety and thoroughly inspect the component before and after machining to minimize risks.
 
+
+<p align="center">
+  <img src="docs/turbine.png" width="300" alt="Front View">
+  <img src="docs/turbine_1.png" width="250" alt="Back View">
+  <img src="docs/turbine_2.png" width="250" alt="Back View">
+
+</p>
+<p align="center"><em>Reference | Our Unit</em></p>
+
 ## Combustion Chamber
 
+The combustion chamber burns the fuel–air mixture to release heat, expanding and accelerating gases that drive the turbine. In mini‑turbojets this occurs in a very small volume with a very short residence time (≈1/500 s).
 
+Air Zoning
+- Primary zone — 20–25% of the total mass flow is used for combustion. Fuel is confined to this zone so the local air–fuel ratio is near the stoichiometric value for kerosene (≈15:1).
+- Secondary (intermediate) zone — ≈20% of the air is introduced to assist mixing and stabilise the flame.
+- Dilution & cooling — the remaining 40–60% of air reduces gas temperatures and protects components: about one‑third of this (≈20% of total flow) dilutes hot gases to turbine‑safe temperatures (≈850–1,700°C), while the rest forms a cooling film along the flame‑tube walls.
+
+Flame Stabilization & Fuel Preparation
+- Diffusion: Compressor air must be decelerated (roughly from ≈500 ft/s to ≈80 ft/s) so the flame is not blown out.
+- Recirculation (toroidal vortex): Swirl vanes and secondary air holes create a stable recirculating zone that anchors the flame and brings fuel droplets to ignition temperature.
+- Pre‑vaporisation: Small engines often use vaporisation tubes or coils ("walking sticks") to preheat and vaporise fuel, ensuring complete combustion in the short residence time available.
+
+Configurations
+- Can‑type: Multiple individual chambers arranged around the shaft (sometimes interconnected for pressure equalisation during start).
+- Tubo‑annular: Several flame tubes inside a common outer casing.
+- Annular: A single continuous annular flame tube — preferred for mini‑turbojets because it is more compact, lighter, and uses cooling air more efficiently.
+
+Materials & Integrity
+The combustion chamber must resist steep temperature gradients, oxidation/corrosion, and creep.
+- Full‑scale engines: typically use high‑performance nickel alloys (e.g., Inconel, Nimonic) to withstand extreme temperatures.
+- Model engines: 316 stainless steel (0.5–1.0 mm) is commonly acceptable due to lower operating temperatures and pressures.
+
+Performance & Emissions
+Well‑designed chambers aim for near‑complete combustion at typical operating conditions. Dilution air both reduces turbine‑inlet temperatures and helps oxidise unburnt species, minimising smoke and carbon monoxide emissions.
+
+### Our Manufacturing Approach
+
+Considering the chamber's requirements and local manufacturing constraints, we were able to produce a unit very close to the original. stainless sheets are inexpensive and laser cutting allowed precise hole patterns. Most forming was done by bending (many bends were hand‑formed because machines capable of bending an inner diameter of ~30 mm are uncommon locally). Parts were joined with TIG welding; this added cost due to limited local TIG expertise and the need to carefully control welding current to avoid burn‑through, but the finished chamber matched the original closely in form and function.
+
+<p align="center">
+   <img src="docs/compressor.jpeg" width="350" alt="Front View">
+      <img src="docs/combustion_chamber_1.png" width="320" alt="Front View">
+
+</p>
 
 ## Compressor Shroud
 The compressor shroud (or compressor cover) is a vital component that directly impacts engine efficiency, reliability, and safety. Its design and manufacture require careful attention to several key factors:
@@ -184,8 +253,16 @@ The compressor shroud (or compressor cover) is a vital component that directly i
 ### Our Manufacturing Approach
 Due to the high cost of 5-axis milling, we considered both casting and lathe machining from raw material. However, casting services for such small components were unavailable. As a result, we used a lathe, which required removing a significant amount of material to achieve the desired shroud shape. This process was time-consuming, especially for smoothing and finishing. Based on our experience, we recommend casting over subtractive manufacturing when possible, as it is more material- and time-efficient for this shape. 
 
-# Dimensions chart 
+<p align="center">
+   <img src="docs/compressor_shroud_1.jpeg" width="550" alt="Front View">
+</p>
 
-# Material Consideration
+## Full Assembly
 
+<p align="center">
+   <img src="docs/Full Assembly.jpeg" width="750" alt="Front View">
+</p>
+<p align="center">
+   <img src="docs/Full Assembly_1.jpg" width="550" alt="Front View">
+</p>
 
