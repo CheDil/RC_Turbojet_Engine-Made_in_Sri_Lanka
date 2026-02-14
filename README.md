@@ -1,7 +1,7 @@
 <!-- PROJECT TITLE & BADGE -->
-![alt text](<docs/RC TURBO JET ENGINE-9.png>)
+![alt text](cover_image.png)
 
-# RC Turbojet Engine Made in Sri Lanka
+## RC Turbojet Engine Made in Sri Lanka
 
 We fabricated a functional RC turbojet engine in Sri Lanka using cost-effective, locally available materials ✈️. Prioritizing functionality over weight, we first test with affordable materials before transitioning to aerospace-grade ones. This project showcases innovation🔥, adaptability, and engineering excellence with limited resources!🌍
 
@@ -9,6 +9,7 @@ We fabricated a functional RC turbojet engine in Sri Lanka using cost-effective,
 
 ## Table of Contents
 This README provides a comprehensive guide to the design, manufacturing, technical decisions and challenges encounted throughout our RC turbojet engine project. Use the links below to quickly navigate to each section:
+This README provides a comprehensive guide to the design, manufacturing, technical decisions and challenges encountered throughout our RC turbojet engine project. Use the links below to quickly navigate to each section:
 
 - [Design Decisions](#design-decisions)
    - [Compressor](#compressor)
@@ -21,13 +22,18 @@ This README provides a comprehensive guide to the design, manufacturing, technic
    - [Aerodynamic and Geometry Considerations](#aerodynamic-and-geometry-considerations)
    - [Our NGV Fabrication Process](#our-ngv-fabrication-process)
 - [Turbine](#turbine)
+   - [Our Turbine Fabrication Approach](#our-turbine-fabrication-approach)
 - [Combustion Chamber](#combustion-chamber)
    - [Our Manufacturing Approach](#our-manufacturing-approach)
 - [Compressor Shroud](#compressor-shroud)
    - [Aerodynamic and Dimensional Considerations](#1-aerodynamic-and-dimensional-considerations)
    - [Structural and Material Considerations](#2-structural-and-material-considerations)
    - [Manufacturing and Integration](#3-manufacturing-and-integration)
+- [Bearing](#bearing)
 - [Full Assembly](#full-assembly)
+- [Testing](#testing)
+- [Reference](#reference)
+- [Core Team](#core-team)
 
 ---
 
@@ -46,7 +52,7 @@ Manufacturing a custom compressor to our exact requirements would have required 
 As an alternative, we considered using car turbocharger compressors(**reference), which are well-suited for this application. However, purchasing a brand-new turbocharger compressor would still cost around LKR 12,000. To further reduce costs, we visited compressor repair centers and sourced defective turbochargers that were discarded due to faults in other components, while the compressor section remained in good condition. This strategy enabled us to acquire the necessary compressor at a fraction of the market price, ensuring both affordability and functionality for our project.
 <p align="center">
   <img src="docs/compressor.png" width="350" alt="Front View">
-  <img src="docs/compressor_1.jpeg" width="300" alt="Back View">
+  <img src="docs/compressor_1.png" width="300" alt="Back View">
 </p>
 <p align="center"><em>Reference | Our Unit</em></p>
 
@@ -70,7 +76,7 @@ Manufacturing the stator with the ideal features presents significant cost and t
 
 <p align="center">
   <img src="docs/stator.png" width="350" alt="Front View">
-  <img src="docs/stator_1.jpeg" width="400" alt="Back View">
+  <img src="docs/stator_1.png" width="400" alt="Back View">
 </p>
 <p align="center"><em>Reference | Our Unit</em></p>
 
@@ -99,7 +105,7 @@ The decision to omit stator vanes was based on references indicating that bladel
 The stator also contains three grooves to provide oil flow and dissipate bearing heat. We machined these grooves on a 3-axis milling machine using 5 mm endmills.
 
 <p align="center">
-  <img src="docs/stator_grooves.jpeg" width="350" alt="Front View">
+  <img src="docs/stator_grooves.png" width="300" alt="Front View">
 </p>
 
 
@@ -154,9 +160,9 @@ To fabricate the nozzle guide vanes (NGV) for our engine, we followed a step-by-
 This hands-on fabrication approach allowed us to meet the main aerodynamic requirements for NGVs, despite the challenges of working with small, precise components and manual assembly.
 
 <p align="center">
-  <img src="docs/Turbo_guided_vanes_1.jpeg" width="260" alt="Front View">
-  <img src="docs/turbo_guided_2.png" width="290" alt="Front View">
-  <img src="docs/Turbine_guided_3.png" width="290" alt="Front View">
+  <img src="docs/Turbo_guided_vanes_1.png" width="260" alt="Front View">
+  <img src="docs/turbo_guided_2.png" width="260" alt="Front View">
+  <img src="docs/turbo_guided_3.png" width="260" alt="Front View">
 
 </p>
 
@@ -191,7 +197,7 @@ This method allowed us to utilize a high-temperature-resistant material while ov
 
 <p align="center">
   <img src="docs/turbine.png" width="300" alt="Front View">
-  <img src="docs/turbine_1.png" width="250" alt="Back View">
+  <img src="docs/turbine_1.png" width="240" alt="Back View">
   <img src="docs/turbine_2.png" width="250" alt="Back View">
 
 </p>
@@ -229,8 +235,9 @@ Well‑designed chambers aim for near‑complete combustion at typical operating
 Considering the chamber's requirements and local manufacturing constraints, we were able to produce a unit very close to the original. stainless sheets are inexpensive and laser cutting allowed precise hole patterns. Most forming was done by bending (many bends were hand‑formed because machines capable of bending an inner diameter of ~30 mm are uncommon locally). Parts were joined with TIG welding; this added cost due to limited local TIG expertise and the need to carefully control welding current to avoid burn‑through, but the finished chamber matched the original closely in form and function.
 
 <p align="center">
-   <img src="docs/compressor.jpeg" width="350" alt="Front View">
-      <img src="docs/combustion_chamber_1.png" width="320" alt="Front View">
+   <img src="docs/combustion_chamber.png" width="290" alt="Front View">
+   <img src="docs/combustion_chamber_1.png" width="250" alt="Front View">
+   <img src="docs/combustion_chamber_2.png   " width="250" alt="Front View">
 
 </p>
 
@@ -258,15 +265,70 @@ The compressor shroud (or compressor cover) is a vital component that directly i
 Due to the high cost of 5-axis milling, we considered both casting and lathe machining from raw material. However, casting services for such small components were unavailable. As a result, we used a lathe, which required removing a significant amount of material to achieve the desired shroud shape. This process was time-consuming, especially for smoothing and finishing. Based on our experience, we recommend casting over subtractive manufacturing when possible, as it is more material- and time-efficient for this shape. 
 
 <p align="center">
-   <img src="docs/compressor_shroud_1.jpeg" width="550" alt="Front View">
+   <img src="docs/compressor_shroud_1.png" width="350" alt="Front View">
 </p>
+
+## Bearing
+Below is a concise summary of bearing requirements and recommendations for mini‑turbojet engines.
+
+- **Rotational speed & cooling:** Bearings must tolerate extremely high speeds (≈100,000–180,000 RPM). Active cooling (ducted compressor air) or equivalent cooling paths are essential to keep bearing temperatures within safe limits.
+
+- **Temperature resistance:** Bearings should stay relatively cool despite nearby turbine temperatures (turbine sections can exceed 600°C). Use low‑thermal‑conductivity materials where appropriate and ensure effective heat removal.
+
+- **Material selection:** Stainless‑steel deep‑groove ball bearings are common and practical. For high performance, prefer hybrid ceramic bearings (silicon‑nitride balls) — they offer longer life and can safely exceed nominal speed ratings when properly cooled. Avoid bearings with rolled‑brass cages for this application.
+
+- **Lubrication:** Use very low‑viscosity lubrication suitable for extreme RPMs. Many mini‑turbojets use kerosene as the primary lubricant  a smawithll addition (~5%) of turbine oil. Ensure reliable lubricant flow through the bearing chambers.
+
+- **Preload & mounting precision:** Apply the design preload (for some designs ≈15 N) to maintain axial/radial stability. Machine bearing seats and housings to very tight concentricity tolerances (≈0.01 mm) to prevent imbalance at high speed.
+
+When selecting bearings for our build we prioritized what was affordable and available locally:
+
+- For Stage 1 testing, we opted for stainless steel bearings as the most economical local option. These bearings are rated for around 56,000 RPM with an outer diameter of 13 mm and an inner bore of 6 mm. However, the small shaft diameter limited our bearing choices.  Reaching approximately 100,000 RPM would necessitate hybrid ceramic bearings, costing around LKR 20,000 each. Therefore, higher-speed hardware will be a Stage 2 upgrade.
+
+To manage cooling and lubrication, we added three grooves to the stator to ensure airflow to the bearing area. Initially, we tested with continuous circulation of low-viscosity oil but found that at high RPM, most of the oil was expelled by airflow. Consequently, subsequent tests involved manual oiling after each run. We also fixed the bearings with a relaxed fit to allow for thermal expansion. Additionally, the grooves were maintained to provide proper air cooling and minimise heat transfer to the bearings.
+
+The shaft casing was made relatively thick to reduce heat transfer from the hot internals to the bearings.
+
+Given the limited number of runs conducted so far, the bearing lifespan remains an unaddressed issue. For local sourcing in Sri Lanka, suppliers like Airline Traders in Pettah offer a wide selection of bearings and are a valuable resource.
+
 
 ## Full Assembly
 
 <p align="center">
-   <img src="docs/Full Assembly.jpeg" width="750" alt="Front View">
+   <img src="docs/Full Assembly.png" width="750" alt="Front View">
 </p>
 <p align="center">
-   <img src="docs/Full Assembly_1.jpg" width="550" alt="Front View">
+   <img src="docs/Full Assembly_1.png" width="450" alt="Front View">
 </p>
 
+
+## Testing
+<p align="center">
+<video controls src="Extreme_Condition_Test.mp4" title="Title"></video>
+</p>
+
+This was not an ideal self-sustaining operating condition, but an intentional extreme-condition test — and the machine handled it successfully.
+ 
+## Reference
+
+- Thomas Kamps (2018) — Model Small Gas Turbine Jet Engines. PDF: [Resources/Thomas%20Kamps%20-%20Model%20Small%20Gas%20Turbine%20Jet%20Engines%20(2018).pdf](Resources/Thomas%20Kamps%20-%20Model%20Small%20Gas%20Turbine%20Jet%20Engines%20(2018).pdf)
+- Rolls‑Royce plc (1996) — The Jet Engine. PDF: [Resources/- The Jet Engine-Rolls-Royce plc (1996).pdf](Resources/-%20The%20Jet%20Engine-Rolls-Royce%20plc%20(1996).pdf)
+- Research paper (local) — PDF: [Resources/research_paper.pdf](Resources/research_paper.pdf)
+
+- GrabCAD — RC Jet Engine library: [https://grabcad.com/library/tag/rc-jet-engine](https://grabcad.com/library/tag/rc-jet-engine)
+
+## Core Team
+  <p align="center"><em>Cheran Dilnuka | Deneth Nonis | Thevindu Dilmith | Upul Pathmakumara</em></p>
+<p align="center">
+  <img src="docs/Cheran_Dilnuka.png" width="150" alt="Front View">
+  <img src="docs/Deneth Nonis.png" width="150" alt="Back View">
+  <img src="docs/Thevindu Dilmith.png" width="150" alt="Back View">
+  <img src="docs/Upul Pathmakumara.png" width="150" alt="Back View">
+
+</p>
+
+
+
+<p align="center">
+  <img src="docs/Footer_image.png" width="1050" alt="Front View">
+</p>
