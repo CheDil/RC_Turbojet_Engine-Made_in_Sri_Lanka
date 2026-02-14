@@ -1,5 +1,7 @@
 <!-- PROJECT TITLE & BADGE -->
-![alt text](cover_image.png)
+<p align="center">
+  <img src="docs/cover_Image.png" width="1090" alt="Front View">
+</p>
 
 ## RC Turbojet Engine Made in Sri Lanka
 
