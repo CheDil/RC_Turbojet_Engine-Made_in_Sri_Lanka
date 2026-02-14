@@ -305,9 +305,8 @@ Given the limited number of runs conducted so far, the bearing lifespan remains 
 
 
 ## Testing
-<p align="center">
-<video controls src="Extreme_Condition_Test.mp4" title="Title"></video>
-</p>
+Uploading Extreme_Condition_Test.mp4…
+
 
 This was not an ideal self-sustaining operating condition, but an intentional extreme-condition test — and the machine handled it successfully.
  
